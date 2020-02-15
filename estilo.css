@@ -1,0 +1,64 @@
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #643d87;
+}
+#principal{
+    width: 340px;
+    height: 370px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 430px;
+    position: fixed;
+    padding-top: 30px;
+    padding-left: 60px;
+    
+}
+#rodape{
+    clear: both;
+    text-align: center;
+    margin-top: 460px;
+}
+h1{
+    text-align: center;
+    border-radius: 10px;
+    background-color: aqua; 
+    padding: 10px;
+    margin-top: 20px;
+}
+#left{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: absolute;
+	left: 15px;
+    
+}
+#right{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: fixed;
+	right: 15px;
+}
+.imagem{
+    width: 400px;
+    height: 400px;
+}
+input ,button{
+	height: 40px;
+	width: 80%;
+	font-size: 22px;
+	margin-bottom: 10px;
+	background-color: #fff;	
+	padding-left: 40px;
+	border:none; 
+    background-position: 10px;
+}
+#escolha{
+    text-align: justify;
+}
