@@ -4,20 +4,22 @@ body{
 }
 #principal{
     width: 340px;
-    height: 370px;
+    height: 330px;
     background-color: aqua;
     border-radius: 10px;
     margin-top: 10px;
     margin-left: 430px;
     position: fixed;
-    padding-top: 30px;
-    padding-left: 60px;
+    padding: 30px;
+    
     
 }
 #rodape{
     clear: both;
     text-align: center;
     margin-top: 460px;
+    font-size: 20px;
+    color: #fff;
 }
 h1{
     text-align: center;
@@ -26,6 +28,7 @@ h1{
     padding: 10px;
     margin-top: 20px;
 }
+
 #left{
     width: 400px;
     height: 400px;
@@ -33,7 +36,8 @@ h1{
     border-radius: 10px;
     margin-top: 10px;
     position: absolute;
-	left: 15px;
+    left: 15px;
+    opacity: 100%;
     
 }
 #right{
@@ -43,22 +47,31 @@ h1{
     border-radius: 10px;
     margin-top: 10px;
     position: fixed;
-	right: 15px;
+    right: 15px;
+    opacity: 100%;
 }
 .imagem{
     width: 400px;
     height: 400px;
+    border-radius: 10px;
 }
-input ,button{
+input ,.btn{
 	height: 40px;
-	width: 80%;
-	font-size: 22px;
+	width: 100%;
+	font-size: 20px;
 	margin-bottom: 10px;
 	background-color: #fff;	
 	padding-left: 40px;
-	border:none; 
+	border-radius: 10px; 
     background-position: 10px;
 }
+.btn{
+    text-align: center;
+}
 #escolha{
-    text-align: justify;
+    width: 80%;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    
 }

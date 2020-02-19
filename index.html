@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Combustometro-Jquery</title>
-    
+    <title>Combustometro-JS</title>
+
 </head>
 
 <body>
     <div>
         <h1>Combustometro - JavaScript</h1>
+
         <div id="principal">
             <form>
-              <label for="">Valor da Gasolina</label><br>
-              <input type="text" placeholder="Ex: 4.099" class="gsl"><br>
-              <label for="">Valor do Etanol</label><br>
-              <input type="text" placeholder="Ex: 2.199" class="acl"><br><br>
-              <button type="submit" value="script.js">Analizar Preço</button>
-              <br><br><br>
-              <p id="escolha">Analizando...</p>
+                <label>Valor da Gasolina</label><br>
+                <input type="number" id="gasolina" value=""><br>
+
+                <label>Valor do Etanol</label><br>
+                <input type="number" id="etanol" value=""><br><br>
+
+                <input class="btn" type="button" value="Analizar Valores" onclick="window.location.reload()"
+                    onclick="esconde">
+
+                <br><br><br>
+                <p id="escolha"></p>
             </form>
+
+
         </div>
-        <div id="right">
-            <img src="imagem/gasolina.jpg" class="imagem">
+        <div>
+            <img src="imagem/gasolina.jpg" class="imagem" id="right">
         </div>
-        <div id="left">
-            <img src="imagem/alcool.jpg" class="imagem">
+        <div>
+            <img src="imagem/alcool.jpg" class="imagem" id="left">
         </div>
         <div id="rodape">
             &copy Direitos Reservados - LivSun Developer 2020
         </div>
     </div>
     <script src="script.js"></script>
-
 
 </body>
 

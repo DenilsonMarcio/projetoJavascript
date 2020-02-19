@@ -1,14 +1,21 @@
-/*function analiza(gasolina,etanol) {
+/* Acredito não ser a melhor forma de resolver
+ * Mas foi a que deu certo por enquanto
+ * TODO melhorar a validação do formulário
+ */
 
-    var gasolina = document.querySelector('.gsl').value;
-    var etanol = document.querySelector('.acl').value;
-    var calc = etanol / gasolina;
+function analiza() {
 
-    console.log(gasolina);
-    console.log(etanol);
-    console.log(calc);
-    alert(calc);
-}
-TODO implementar o Jquery / Javascript
-*/
+    var gasolina = document.getElementById('gasolina').value;
+    var etanol = document.getElementById('etanol').value;
+    var calc = gasolina * 0.7;
 
+    if (gasolina == 0 || etanol == 0) {
+        document.getElementById('escolha').innerHTML = "Aguardando os valores...";
+    } else {
+        if (calc > etanol) {
+            document.getElementById('escolha').innerHTML = "Escolha Etanol";
+        } else
+            document.getElementById('escolha').innerHTML = "Escolha Gasolina";
+    };
+};
+analiza();
