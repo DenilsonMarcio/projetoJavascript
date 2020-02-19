@@ -18,4 +18,5 @@ function analiza() {
             document.getElementById('escolha').innerHTML = "Escolha Gasolina";
     };
 };
+
 analiza();
