@@ -19,4 +19,4 @@ function analiza() {
     };
 };
 
-analiza();
+// analiza();
