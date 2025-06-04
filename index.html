@@ -1,44 +1,33 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <title>Combustometro-JS</title>
-
 </head>
 
 <body>
-    <div>
-        <h1>Combustometro - JavaScript</h1>
+    <h1>Combustometro - JavaScript</h1>
+    <main id="principal">
+        <form onsubmit="analiza(); return false;" autocomplete="off">
+            <label for="gasolina">Valor da Gasolina</label>
+            <input type="number" id="gasolina" min="0.01" step="0.01" placeholder="Ex: 5.49" autocomplete="off">
 
-        <div id="principal">
-            <form>
-                <label>Valor da Gasolina</label><br>
-                <input type="number" id="gasolina" value=""><br>
+            <label for="etanol">Valor do Etanol</label>
+            <input type="number" id="etanol" min="0.01" step="0.01" placeholder="Ex: 3.99" autocomplete="off">
 
-                <label>Valor do Etanol</label><br>
-                <input type="number" id="etanol" value=""><br><br>
-
-                <input class="btn" type="button" value="Analizar Valores" onclick="analiza()">
-                <br><br><br>
-                <p id="escolha"></p>
-            </form>
-
-
-        </div>
-        <div>
-            <img src="imagem/gasolina.jpg" class="imagem" id="right">
-        </div>
-        <div>
-            <img src="imagem/alcool.jpg" class="imagem" id="left">
-        </div>
-        <div id="rodape">
-            &copy Direitos Reservados - LivSun Developer 2020
-        </div>
-    </div>
+            <button class="btn" type="submit">Analisar Valores</button>
+            <p id="escolha"></p>
+        </form>
+    </main>
+    <img src="imagem/gasolina.jpg" class="imagem" id="right" alt="Gasolina">
+    <img src="imagem/alcool.jpg" class="imagem" id="left" alt="Etanol">
+    <footer id="rodape">
+        &copy; Direitos Reservados - LivSun Developer 2020
+    </footer>
     <script src="script.js"></script>
-
 </body>
 
 </html>
